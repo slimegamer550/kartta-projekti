@@ -1,0 +1,12 @@
+.header {
+  position: relative;
+  text-align: center;
+  color: #4B0082;
+}
+
+.header_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
