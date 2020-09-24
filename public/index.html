@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <title> Map App </title>
+  <head>
+    <title> Karttasovellus </title>
 
-<meta charset="utf-8">
+    <meta charset="utf-8">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<script src="js/Void.js"></script>
+    <script src="js/Void.js"></script>
 
-<link rel="stylesheet" href="css/Void.css">
+    <link rel="stylesheet" href="css/Void.css"/>
 
- </head>
- <body>
-   <div class="header">
-     <img src="kuvat/astronomy-1867616__340.jpg" alt="this should have the background" width="100%">
-     <div class="header_text">
-       <h1> Adventuring on the map </h1>
-       <p> kodareiden mini full stack -kurssilla. </p>
-     </div>
-   </div>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
 
-   <div class="row">
-     <div class="col-sm-3">
-       <p> height </p>
-       <p id="height"></p>
-     </div>
-     <div class=col-sm-9>
-       <p> lenght </p>
-       <p id="lenght"> </p>
-     </div>
-   </div>
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+     crossorigin=""></script>
+
+  </head>
+  <body>
+
+    <div class="header">
+      <img src="kuvat/astronomy-1867616__340.jpg" alt="This should have the background" width=100%>
+      <div class="otsikon_teksti">
+        <h1> Adventuring on the map </h1>
+        <p> Kodareiden Mini Full Stack -kurssilla. </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-3">
+        <p> height </p>
+        <p id="height"></p>
+      </div>
+      <div class="col-sm-9">
+        <p> lenght </p>
+        <p id="lenght"> </p>
+      </div>
+    </div>
 
     <div class="row">
       <div class="col-sm-7">
@@ -45,5 +55,5 @@
       </div>
     </div>
 
- </body>
- </html>
+  </body>
+</html>
